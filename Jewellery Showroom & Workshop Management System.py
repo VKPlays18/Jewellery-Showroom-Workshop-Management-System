@@ -1,7 +1,12 @@
-uimport datetime
+import datetime
 import time
 
 import mysql.connector
+
+print("SQL Connection Details:")
+HOST = input("Enter Host: ")
+USER = input("Enter User: ")
+PASSWORD = input("Enter Password: ")
 
 myconn = mysql.connector.connect(host="localhost",user="root",passwd="Password")
 
